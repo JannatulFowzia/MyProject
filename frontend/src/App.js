@@ -1,58 +1,138 @@
 import React, { Component } from 'react';
 
+
 import logo from './sigmatechnology_logo_white_500.svg';
 
+import { BrowserRouter } from 'react-router-dom';
+
+
 import './App.css';
+import MainPage from './component/MainPage';
+
+
+
+
 
 
 
 class App extends Component {
 
+
+
   state = {
+
+addContainer: [],
+
 
     isLoading: false,
 
+
+
     greeting: ""
 
+
+
   };
+
+
+ 
+3
+4
+5
+6
+7
+constructor(props) {
+    
+       super(props)
+    
+      this.setstate = new MainPage();
+    
+     }
+
 
 
 
   sayHello = async (event) => {
 
+
+
     event.preventDefault();
 
-    let response = await fetch('/myapi?name=' + this.state.myapi);
 
-    let body = await response.json();
 
-    this.setState({ myapi: body.name, isLoading: false, isGreetingVisible: '' });
+    let response = await fetch('MainPage');
+
+alert(response);
+
+   
+
+
+
+    this.setState({ response});
+
+
 
   }
+
+  handleClick = (event) => {
+   window.open("component/MainPage.js");
+ }
+ 
+
+
+NavigateActivityFunction = (event) =>{
+
+  alert("Yes Navigating");
+  
+}
 
 
 
   updateName = (event) => {
 
+
+
     event.preventDefault();
 
+
+
     this.setState({ myapi: event.target.value, isLoading: false });
+
+
 
   }
 
 
 
+
+
+
+
   render() {
+
+
 
     const { myapi, isLoading } = this.state;
 
 
 
+
+
+
+
     if (isLoading) {
+
+
 
       return "Loading...";
 
+
+
     }
+
+
+
+
 
 
 
@@ -60,25 +140,60 @@ class App extends Component {
 
 
 
+
+
+
+
       <div className="App">
+
+
+
+
+     
 
 
 
         <header className="App-header">
 
+
+
           <img src={logo} className="App-logo" alt="logo" />
+
+
+
+
 
 
 
           <div className="App-intro">
 
-            <input onChange={(event) => this.updateName(event)} placeholder="Enter Your Name"></input>
-
-            <button onClick={(event) => this.sayHello(event)}>Please Click Me!</button>
 
 
+             <input onChange={(event) => this.updateName(event)} placeholder="UserName"></input><br/>
+            <input placeholder="Password"></input><br/>
 
-            <h2 style={{ visibility: this.isGreetingVisible }}>Hello {this.state.myapi}</h2>
+              
+        
+
+    
+
+            <button onClick={(event) =>this.handleClick(event)}>Login</button>
+
+           
+
+            <button>Forgot Password</button>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -88,7 +203,15 @@ class App extends Component {
 
 
 
+
+
+
+
         </header>
+
+
+
+
 
 
 
@@ -96,12 +219,25 @@ class App extends Component {
 
 
 
+
+
+
+
     );
 
+
+
   }
+
+
 
 }
 
 
 
-export default App;
+
+
+
+
+export default App
+
