@@ -1,5 +1,6 @@
 import React, { useLayoutEffect } from 'react';
 import { BootstrapTable, TableHeaderColumn } from "react-bootstrap-table";
+import UploadFile from './UploadFile';
 const products = [{ id: 1, name: 'Conan the Barbarian', price: '1982' }];
 //this should autodirect to LoginPage if you're not logged in.. not sure how.
 class MainPage extends React.Component {
@@ -8,6 +9,7 @@ class MainPage extends React.Component {
     render() {
         return (
             <useLayoutEffect>
+               <UploadFile/>>
         <BootstrapTable data={ products }>
 
         <TableHeaderColumn dataField='id' isKey>Product ID</TableHeaderColumn>
