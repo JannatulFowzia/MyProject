@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import logo from '../sigmatechnology_logo_white_500.svg';
-
-import { withRouter } from 'react-router-dom';
+import ReactDOM from 'react-dom';
+import { Route, BrowserRouter } from 'react-router-dom';
 
 import MainPage from './MainPage';
 import '../App.css';
@@ -9,10 +9,14 @@ import '../App.css';
 class LoginPage extends Component {
 
         handleClick = (event) => {
-            this.props.history.push('MainPage');
-        
-          //this.context.router.history.push();
-          
+            ReactDOM.render((
+
+                <BrowserRouter>
+                <Route exact path="/" component={MainPage}></Route>
+                </BrowserRouter>            
+            
+            ), document.getElementById('root'));
+                      
         }
 
     render() {
@@ -48,7 +52,7 @@ class LoginPage extends Component {
 
 
 
-             <input onChange={(event) => this.updateName(event)} placeholder="UserName"></input><br/>
+             <input placeholder="UserName"></input><br/>
             <input placeholder="Password"></input><br/>
 
               
