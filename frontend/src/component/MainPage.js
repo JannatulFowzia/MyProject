@@ -1,6 +1,7 @@
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 import { BootstrapTable, TableHeaderColumn } from "react-bootstrap-table";
 import UploadFile from './UploadFile';
+import {TerribleDiv} from '../Style/BaseStyle';
 const products = [{ id: 1, name: 'Conan the Barbarian', price: '1982' }];
 //this should autodirect to LoginPage if you're not logged in.. not sure how.
 class MainPage extends React.Component {
@@ -8,8 +9,9 @@ class MainPage extends React.Component {
  
     render() {
         return (
-            <useLayoutEffect>
-               <UploadFile/>>
+           //this is very temporary just to show how it works :)
+        <TerribleDiv>
+              
         <BootstrapTable data={ products }>
 
         <TableHeaderColumn dataField='id' isKey>Product ID</TableHeaderColumn>
@@ -19,7 +21,8 @@ class MainPage extends React.Component {
         <TableHeaderColumn dataField='price'>Product Price</TableHeaderColumn>
 
       </BootstrapTable>
-      </useLayoutEffect>
+      </TerribleDiv>
+      
         )
     }
 }
