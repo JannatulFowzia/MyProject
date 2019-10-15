@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import {UploadDiv} from '../Style/BaseStyle';
 
 //this should autodirect to LoginPage if you're not logged in.. not sure how.
 class UploadFile extends Component {
@@ -40,16 +41,16 @@ class UploadFile extends Component {
         
        return (
            
-         <div>
-			 <form onSubmit={this.onClick}>
-            	 <input type="file"  name="file" onChange={this.onChange} ref="test"/>
-				 <button type ="submit"> Upload</button>
-			 </form>
+         <UploadDiv>
+						<form onSubmit={this.onClick}>
+										<input type="file"  name="file" onChange={this.onChange} ref="test"/>
+							<button type ="submit"> Upload</button>
+						</form>
 
 			
 
 		
-         </div>
+         </UploadDiv>
       )
 
     }

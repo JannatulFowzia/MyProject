@@ -1,12 +1,31 @@
 import styled from 'styled-components';
 
 const TerribleDiv = styled.div`
-  background-color: #44014C;
-  width: 300px;
-  min-height: 200px;
-  margin: 30px auto;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  display:block;
   box-sizing: border-box;
+  
 `;
 
+const UploadDiv = styled.div `
+		background-color: #ebe1df;
+		padding:10px;
+		
 
-export {TerribleDiv}
+
+`;
+
+const HeaderDiv = styled.div `
+padding: 20px;
+		height: 35vh;
+		background-color: #d4c6c3;
+		
+
+
+`;
+export {TerribleDiv,UploadDiv,HeaderDiv}
