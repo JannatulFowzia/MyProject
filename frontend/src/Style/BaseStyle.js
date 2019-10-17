@@ -21,7 +21,7 @@ const UploadDiv = styled.div `
 `;
 
 const HeaderDiv = styled.div `
-padding: 20px;
+		padding: 20px;
 		height: 35vh;
   
 		
@@ -34,6 +34,11 @@ font-size: 15px;
 `
 
 const ButtonField = styled.button `
-font-size: 15px; 
+	font-size: 15px; 
+	border:none;
+	border-radius:3px;
+	padding:1vh;
+	margin:2px;
+
 `
 export {TerribleDiv,UploadDiv,HeaderDiv,TextField,ButtonField}

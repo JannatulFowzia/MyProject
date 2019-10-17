@@ -5,6 +5,7 @@ import { Route, BrowserRouter } from 'react-router-dom';
 import {TextField,ButtonField} from '../Style/BaseStyle';
 import MainPage from './MainPage';
 import '../App.css';
+import { StyledTextInput,StyledForm,StyledTextInputPassword,StyledTextInputUsername} from '../Style/LoginPageStyle';
 
 class LoginPage extends Component {
 
@@ -29,40 +30,25 @@ class LoginPage extends Component {
 
       <div className="App">
 
-
-
-
-     
-
-
-
-        <header className="App-header">
+        
 
 
 
           <img src={logo} className="App-logo" alt="logo" />
+          
 
-
-
-
-
-
-
-          <div className="App-header">
-
-
-
-             <TextField placeholder="UserName"></TextField>
-            <TextField placeholder="Password"></TextField><br/>
-
-              
-        
-
-    
-
-            <ButtonField onClick={(event) =>this.handleClick(event)}>Login</ButtonField>
+            
+              <StyledForm>
+                 <h2 >Please login</h2>
+                  <StyledTextInputUsername  placeholder="UserName"></StyledTextInputUsername>
+                  <StyledTextInputPassword  placeholder="Password"></StyledTextInputPassword><br/>
+                  
+                  <ButtonField className="btn btn-md btn-secondary btn-block" type = "submit" onClick={(event) =>this.handleClick(event)}>Login</ButtonField>
+                
+                  <ButtonField className="btn btn-md btn-secondary btn-block">Forgot Password</ButtonField>
+              </StyledForm>
            
-            <ButtonField>Forgot Password</ButtonField>
+            
 
 
 
@@ -80,15 +66,9 @@ class LoginPage extends Component {
 
 
 
-          </div>
 
 
 
-
-
-
-
-        </header>
 
 
 
