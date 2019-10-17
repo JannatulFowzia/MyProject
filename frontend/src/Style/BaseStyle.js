@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const TerribleDiv = styled.div`
-  background-color: #f1f1f1;
+  #background-color: #f1f1f1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +23,7 @@ const UploadDiv = styled.div `
 const HeaderDiv = styled.div `
 padding: 20px;
 		height: 35vh;
-		background-color: #d4c6c3;
+  
 		
 
 

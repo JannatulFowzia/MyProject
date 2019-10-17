@@ -3,7 +3,7 @@ import UploadFile from './UploadFile';
 import logo from '../sigmatechnology_logo_white_500.svg';
 import {TerribleDiv,HeaderDiv} from '../Style/BaseStyle';
 import Summary from './Summary';
-const products = [{ id: 1, name: 'Conan the Barbarian', price: '1982' }];
+
 
 //this should autodirect to LoginPage if you're not logged in.. not sure how.
 class MainPage extends React.Component {
