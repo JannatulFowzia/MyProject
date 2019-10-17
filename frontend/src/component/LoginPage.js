@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import logo from '../sigmatechnology_logo_white_500.svg';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter } from 'react-router-dom';
-
+import {TextField,ButtonField} from '../Style/BaseStyle';
 import MainPage from './MainPage';
 import '../App.css';
 
@@ -48,21 +48,21 @@ class LoginPage extends Component {
 
 
 
-          <div className="App-intro">
+          <div className="App-header">
 
 
 
-             <input placeholder="UserName"></input><br/>
-            <input placeholder="Password"></input><br/>
+             <TextField placeholder="UserName"></TextField>
+            <TextField placeholder="Password"></TextField><br/>
 
               
         
 
     
 
-            <button onClick={(event) =>this.handleClick(event)}>Login</button>
+            <ButtonField onClick={(event) =>this.handleClick(event)}>Login</ButtonField>
            
-            <button>Forgot Password</button>
+            <ButtonField>Forgot Password</ButtonField>
 
 
 

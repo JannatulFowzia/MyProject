@@ -28,4 +28,12 @@ padding: 20px;
 
 
 `;
-export {TerribleDiv,UploadDiv,HeaderDiv}
+
+const TextField = styled.input `
+font-size: 15px; 
+`
+
+const ButtonField = styled.button `
+font-size: 15px; 
+`
+export {TerribleDiv,UploadDiv,HeaderDiv,TextField,ButtonField}
