@@ -11,6 +11,7 @@
     "history": "^4.10.1",
     "react": "^16.10.2",
     "react-bootstrap-table": "^4.3.1",
+    "react-cool-tabs": "^1.1.6",
     "react-data-table-component": "^3.5.1",
     "react-document-title": "^2.0.3",
     "react-dom": "^16.10.2",
@@ -19,6 +20,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-stormpath": "^2.0.1",
+    "save": "^2.4.0",
     "styled-components": "^4.4.0"
   },
   "scripts": {

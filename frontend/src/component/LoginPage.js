@@ -2,16 +2,16 @@ import React, { Component } from 'react'
 import logo from '../sigmatechnology_logo_white_500.svg';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter } from 'react-router-dom';
-import {TextField,ButtonField} from '../Style/BaseStyle';
+import {ButtonField} from '../Style/BaseStyle';
 import MainPage from './MainPage';
 import '../App.css';
-import { StyledTextInput,StyledForm,StyledTextInputPassword,StyledTextInputUsername} from '../Style/LoginPageStyle';
+import {StyledForm,StyledTextInputPassword,StyledTextInputUsername} from '../Style/LoginPageStyle';
 
 class LoginPage extends Component {
 
         handleClick = (event) => {
+          event.preventDefault();
             ReactDOM.render((
-
                 <BrowserRouter>
                 <Route exact path="/" component={MainPage}></Route>
                 </BrowserRouter>            

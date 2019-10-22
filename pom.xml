@@ -14,7 +14,7 @@
    <name>MBP_2019</name>
    <description>Demo project for Spring Boot</description>
    <properties>
-      <java.version>11</java.version>
+      <java.version>1.8</java.version>
    </properties>
    
    <dependencies>
@@ -35,6 +35,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+     <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-dynamodb</artifactId>
+        <version>1.11.34</version>
+    </dependency>
+    <dependency>
+        <groupId>com.github.derjust</groupId>
+        <artifactId>spring-data-dynamodb</artifactId>
+        <version>4.3.1</version>
+    </dependency>
    </dependencies>
    
    <build>
@@ -64,8 +74,8 @@
             <configuration>
                 <fork>true</fork>
                 <executable>C:\Program Files\Java\jdk-11.0.4\bin\javac.exe</executable>
-        		<source>11</source>
-            	<target>11</target>
+        		<source>1.8</source>
+            	<target>1.8</target>
              </configuration>
         </plugin>
          <plugin>
