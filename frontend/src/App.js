@@ -165,7 +165,7 @@ NavigateActivityFunction = (event) =>{
 
 
 
-             <input onChange={(event) => this.updateName(event)} placeholder="UserName"></input><br/>
+            <input onChange={(event) => this.updateName(event)} placeholder="UserName"></input><br/>
             <input placeholder="Password"></input><br/>
 
               

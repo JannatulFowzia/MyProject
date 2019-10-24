@@ -4,13 +4,17 @@ import logo from '../sigmatechnology_logo_white_500.svg';
 import {TerribleDiv,HeaderDiv} from '../Style/BaseStyle';
 import Summary from './Summary';
 import CoolTabs from 'react-cool-tabs';
-import {StyledForm,StyledTextInputPassword,StyledTextInputUsername,StyledSubmitForm} from '../Style/LoginPageStyle';
+import {StyledForm,StyledTextInputPassword,StyledTextInputUsername,StyledSubmitForm,StyledTextArea} from '../Style/LoginPageStyle';
 import {UploadDiv, ButtonField} from '../Style/BaseStyle';
 
 
 //this should autodirect to LoginPage if you're not logged in.. not sure how.
 class MainPage extends Component {
-    
+     handleClick = (event) => {
+        event.preventDefault(); 
+        alert("Here");
+                      
+        }
  
     render() {
         return (
@@ -37,10 +41,9 @@ class MainPage extends Component {
       </TerribleDiv>}
       rightContent={<TerribleDiv><HeaderDiv><img src={logo}></img></HeaderDiv><UploadDiv/> <StyledSubmitForm>
                  <StyledTextInputUsername  placeholder="UserName"></StyledTextInputUsername>
-                  
+                  <textarea placeholder="Leads"></textarea><br/>
                   <ButtonField className="btn btn-md btn-secondary btn-block" type = "submit" onClick={(event) =>this.handleClick(event)}>Submit</ButtonField>
-                
-                  </StyledSubmitForm></TerribleDiv>}/>
+                 </StyledSubmitForm></TerribleDiv>}/>
       
         );
     }

@@ -25,6 +25,14 @@ const StyledTextInputUsername = styled.input`
 		border-top-right-radius: 1vh;
 `;
 
+const StyledTextArea = styled.input`
+		margin:15px 1px 1px 1px;
+		border:2px;
+		padding:1vh;
+		border-top-left-radius: 1vh;
+		border-top-right-radius: 1vh;
+`;
+
 const StyledForm = styled.form`
 
 
@@ -47,13 +55,12 @@ const StyledSubmitForm = styled.form`
 background-image: linear-gradient(white, white);
 		border: 1px;
 		display:flex;
-		
 		color:white;
 		flex-direction: column;
-		background-color: #c4c2c2;
+		background-color: #c4c2c2d
 		padding:10vh;
 		border-radius:1vh;
 		width:30%;
 
 		`;
-export {LoginFormDiv, StyledTextInput,StyledForm, StyledTextInputPassword, StyledTextInputUsername,StyledSubmitForm}
+export {LoginFormDiv, StyledTextInput,StyledForm, StyledTextInputPassword, StyledTextInputUsername,StyledSubmitForm,StyledTextArea}
